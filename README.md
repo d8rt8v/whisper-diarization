@@ -7,11 +7,24 @@ Audio transcribing + diarization pipeline.
 - Whisper Large v3 (CTranslate 2 version `faster-whisper==1.0.3`)
 - Pyannote audio 3.3.1
 
+## Installation (without cog)
+
+```
+sudo apt install ffmpeg libmagic1
+```
+```
+git clone https://github.com/d8rt8v/whisper-diarization.git
+cd whisper-diarization
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+```
 ## Usage
 
-- Used at [Audiogest](https://audiogest.app)
-- Or try at [Replicate](https://replicate.com/thomasmol/whisper-diarization)
-- Or deploy yourself at [Replicate](https://replicate.com/) (Make sure to add your own HuggingFace API key and accept the terms of use of the pyannote models used)
+Run app.py 
+```
+python app.py
+```
 
 ### Input
 
